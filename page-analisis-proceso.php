@@ -99,7 +99,7 @@ $css_file = get_stylesheet_directory() . '/assets/css/analisis-proceso.css';
                 
 
                     <div class="number-wrapper">
-                          <img src="<?php echo esc_url(get_theme_file_uri("assets/images/svg/04.svg")) ?>" alt="Ícono de servidor" height="70.56" width="120">
+                          <img src="<?php echo esc_url(get_theme_file_uri("assets/images/svg/04.svg")) ?>" alt="Ícono de servidor" height="58.8" width="100">
                     </div>
 
 
@@ -119,7 +119,7 @@ $css_file = get_stylesheet_directory() . '/assets/css/analisis-proceso.css';
                 
 
                     <div class="number-wrapper">
-                          <img src="<?php echo esc_url(get_theme_file_uri("assets/images/svg/05.svg")) ?>" alt="Ícono de servidor" height="78.44" width="127.01">
+                          <img src="<?php echo esc_url(get_theme_file_uri("assets/images/svg/05.svg")) ?>" alt="Ícono de servidor" height="58.8" width="100">
                     </div>
 
 
@@ -127,6 +127,44 @@ $css_file = get_stylesheet_directory() . '/assets/css/analisis-proceso.css';
 
             </div> <!--Bottom Analisis ending-->
         </section>
+
+        <section class="informe-start">
+            <h2 class="informe-section-title">
+                Nuestro informe incluye...
+            </h2>
+            <img class="informe-decoration" src="<?php echo esc_url(get_theme_file_uri("assets/images/webp/decoration.webp")) ?>" alt="" loading="lazy">
+            <div class="white-overlay"></div>
+        </section>
+
+
+        <section class="informe-props">
+            <div class="props-grid">
+                <article class="prop">
+                    <p class="prop-text">Total de CVE detectadas</p>
+                </article>
+
+                 <article class="prop">
+                    <p class="prop-text">Promedio de CVSS</p>
+                </article>
+
+                 <article class="prop">
+                    <p class="prop-text">Puntuación de riesgo</p>
+                </article>
+
+                 <article class="prop">
+                    <p class="prop-text">Vulnerabilidades críticas, altas, medias y bajas</p>
+                </article>
+                 <article class="prop">
+                    <p class="prop-text">Detalle de CVE y componentes afectados</p>
+                </article>
+                 <article class="prop">
+                    <p class="prop-text">Plan de acción priorizado</p>
+                </article>
+
+            </div>
+        </section>
+
+
     </main>
 
 
