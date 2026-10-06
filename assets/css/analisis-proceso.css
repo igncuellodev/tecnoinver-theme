@@ -1,1 +1,131 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+main {
+  font-family: "Figtree";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-analisis-proceso {
+  width: 100%;
+  max-width: 74.75rem;
+  margin-top: 8rem;
+}
+
+.upper-analisis {
+  display: flex;
+  justify-content: space-between;
+}
+
+.analisis-intro {
+  width: 38.25rem;
+}
+
+.title-analisis {
+  font-size: var(--font-h4);
+}
+
+.title-analisis .highlight-title {
+  font-size: var(--font-h3);
+  background: var(--main-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.tecno-main-text {
+  font-size: var(--text-lg);
+  color: var(--obsidian-300);
+}
+
+.analisis-intro-card {
+  width: 30.125rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--white-600);
+  border-radius: 2rem;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(231, 96, 2, 0.05) 100%
+    ),
+    #fff;
+}
+
+.analisis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 16rem;
+  gap: 1.75rem;
+  margin-top: 6.875rem;
+}
+
+.analisis-card {
+  grid-area: span 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  height: 26rem;
+  border: 1px solid var(--white-600);
+  border-radius: 2rem;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(231, 96, 2, 0.05) 100%
+    ),
+    #fff;
+}
+
+.analisis-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  border: 1px solid var(--white-600);
+  border-radius: 0.75rem;
+  width: 4.0625rem;
+  height: 4.0625rem;
+}
+
+.analisis-card-title {
+  font-size: var(--font-h6);
+  font-weight: 600;
+  background: var(--main-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.number-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 1rem;
+}
+
+.horizontal-card {
+  grid-area: span 2 / span 3;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--white-600);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(231, 96, 2, 0.05) 100%
+    ),
+    #fff;
+}
+.card-content-wrapper-horizontal {
+  width: 20rem;
+}
