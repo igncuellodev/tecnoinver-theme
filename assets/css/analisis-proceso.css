@@ -44,6 +44,7 @@ main {
 .analisis-intro-card {
   width: 30.125rem;
   display: flex;
+  gap: 2rem;
   align-items: center;
   padding: 1.5rem;
   border: 1px solid var(--white-600);
@@ -220,7 +221,7 @@ main {
 }
 
 /* ========================================
-   1024px - 1196px
+   1025px - 1196px
    ======================================== */
 
 @media (max-width: 1196px) and (min-width: 1025px) {
@@ -228,6 +229,20 @@ main {
   .informe-start {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+/* ========================================
+   1025px - 1073px
+   ======================================== */
+
+@media (max-width: 1080px) and (min-width: 1025px) {
+  .analisis-card {
+    height: fit-content;
+  }
+  .analisis-intro,
+  .tecno-main-text {
+    width: 80%;
   }
 }
 
