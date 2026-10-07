@@ -22,7 +22,7 @@ $css_file = get_stylesheet_directory() . '/assets/css/analisis-proceso.css';
                 </div><!--Analisis intro ending-->
 
                 <div class="analisis-intro-card">
-                    <img src="<?php echo esc_url(get_theme_file_uri("assets/images/svg/shield-ilustration.svg")) ?>" alt="Ilustración de escudo" height="121" width="83">
+                    <img class="escudo" src="<?php echo esc_url(get_theme_file_uri("assets/images/svg/shield-ilustration.svg")) ?>" alt="Ilustración de escudo" height="121" width="83">
                     <p class="tecno-main-text">VRX analiza tu infraestructura para entregarte una visión clara de las vulnerabilidades y ayudarte a reducir los riesgos.</p>
 
                     

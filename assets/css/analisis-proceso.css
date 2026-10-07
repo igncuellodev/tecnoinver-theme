@@ -45,7 +45,6 @@ main {
   width: 30.125rem;
   display: flex;
   align-items: center;
-  gap: 2.5rem;
   padding: 1.5rem;
   border: 1px solid var(--white-600);
   border-radius: 2rem;
@@ -126,6 +125,7 @@ main {
     ),
     #fff;
 }
+
 .card-content-wrapper-horizontal {
   width: 20rem;
 }
@@ -217,4 +217,145 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* ========================================
+   1024px - 1196px
+   ======================================== */
+
+@media (max-width: 1196px) and (min-width: 1025px) {
+  .content-analisis-proceso,
+  .informe-start {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ========================================
+   TABLET
+   769px - 1024px
+   ======================================== */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .content-analisis-proceso {
+    padding: 0 2rem;
+  }
+
+  .upper-analisis {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .analisis-intro {
+    width: 50%;
+  }
+
+  .analisis-intro-card {
+    width: 50%;
+  }
+
+  .analisis-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.75rem;
+  }
+
+  .analisis-card {
+    grid-column: auto;
+    grid-row: auto;
+    grid-area: auto;
+    height: 26rem;
+  }
+
+  .horizontal-card {
+    grid-column: auto;
+    grid-row: auto;
+    grid-area: auto;
+    flex-direction: row;
+  }
+
+  .card-content-wrapper-horizontal {
+    width: 20rem;
+  }
+
+  .props-grid {
+    padding: 0 2rem;
+  }
+}
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .content-analisis-proceso {
+    padding: 0 1rem;
+    margin-top: 4rem;
+  }
+
+  .upper-analisis {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .analisis-intro {
+    width: 100%;
+  }
+
+  .analisis-intro-card {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .analisis-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .analisis-card {
+    grid-column: auto;
+    grid-row: auto;
+    grid-area: auto;
+    height: auto;
+    min-height: 20rem;
+  }
+
+  .horizontal-card {
+    grid-column: auto;
+    grid-row: auto;
+    grid-area: auto;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card-content-wrapper-horizontal {
+    width: 100%;
+  }
+
+  .informe-start {
+    margin-top: 5rem;
+  }
+
+  .informe-section-title {
+    text-align: center;
+  }
+
+  .informe-props {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .props-grid {
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .prop {
+    min-height: 4rem;
+  }
 }
