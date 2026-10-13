@@ -64,6 +64,8 @@ main {
   grid-template-rows: 1fr 16rem;
   gap: 1.75rem;
   margin-top: 6.875rem;
+  z-index: 4;
+  position: relative;
 }
 
 .analisis-card {
@@ -151,18 +153,30 @@ main {
   z-index: 3;
 }
 
+.informe-decoration {
+  position: absolute;
+  top: 34rem;
+  z-index: 1;
+}
+
 .white-overlay {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 30rem;
   z-index: 2;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 74.48%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 58.48%);
 }
 
 .informe-props {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 3;
   margin-bottom: 8rem;
+  gap: 2rem;
 }
 
 .props-grid {
@@ -220,6 +234,56 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
+.download-banner {
+  height: 650px;
+  width: 100%;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%),
+    url("../images/webp/bg-download.webp") lightgray 0px -81.06px / 100%
+      124.941% no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.informe-descarga-title {
+  font-size: var(--font-h3);
+  background: var(--main-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  position: relative;
+  z-index: 3;
+}
+
+.download-text {
+  color: var(--white-500);
+  font-size: var(--text-lg);
+  margin-bottom: 2.5rem;
+}
+
+.btn-download {
+  background: var(--main-gradient);
+  color: var(--white-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+  border-radius: 0.6rem;
+  transition: ease-in 300ms;
+}
+
+.btn-download:hover {
+  color: white;
+  opacity: 0.6;
+}
 /* ========================================
    1025px - 1196px
    ======================================== */
@@ -229,6 +293,10 @@ main {
   .informe-start {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .informe-decoration {
+    display: none;
   }
 }
 
@@ -254,6 +322,10 @@ main {
 @media (max-width: 1024px) and (min-width: 769px) {
   .content-analisis-proceso {
     padding: 0 2rem;
+  }
+
+  .informe-decoration {
+    display: none;
   }
 
   .upper-analisis {
@@ -372,5 +444,18 @@ main {
 
   .prop {
     min-height: 4rem;
+  }
+
+  .btn-download {
+    width: 100%;
+  }
+
+  .download-banner {
+    height: 450px;
+    padding: 1rem;
+  }
+
+  .informe-decoration {
+    display: none;
   }
 }

@@ -129,15 +129,15 @@ $css_file = get_stylesheet_directory() . '/assets/css/analisis-proceso.css';
         </section>
 
         <section class="informe-start">
-            <h2 class="informe-section-title">
-                Nuestro informe incluye...
-            </h2>
             <img class="informe-decoration" src="<?php echo esc_url(get_theme_file_uri("assets/images/webp/decoration.webp")) ?>" alt="" loading="lazy">
             <div class="white-overlay"></div>
         </section>
 
 
         <section class="informe-props">
+            <h2 class="informe-section-title">
+                Nuestro informe incluye...
+            </h2>
             <div class="props-grid">
                 <article class="prop">
                     <p class="prop-text">Total de CVE detectadas</p>
@@ -162,6 +162,14 @@ $css_file = get_stylesheet_directory() . '/assets/css/analisis-proceso.css';
                 </article>
 
             </div>
+        </section>
+
+
+
+        <section class="download-banner">
+            <h3 class="informe-descarga-title">¿Quieres conocer nuestro informe demo?</h3>
+            <p class="download-text">Descarga nuestro informe y entiende como funciona nuestro proceso de análisis.</p>
+            <a href="https://www.tecnoinver.cl/wp-content/uploads/2026/10/informe-demo.pdf" download class="btn-download">Descargar PDF</a>
         </section>
 
 
