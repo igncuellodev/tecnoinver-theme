@@ -125,3 +125,56 @@ services.forEach((service) => {
 
   servicesGrid.appendChild(serviceCard);
 });
+
+const projects = [
+  {
+    img: "http://tecnoinver.local/wp-content/uploads/2026/10/placeholder.webp",
+    title: "Proyecto 01",
+    type: "Landing Page",
+  },
+  {
+    img: "http://tecnoinver.local/wp-content/uploads/2026/10/placeholder.webp",
+    title: "Proyecto 02",
+    type: "Landing Page",
+  },
+  {
+    img: "http://tecnoinver.local/wp-content/uploads/2026/10/placeholder.webp",
+    title: "Proyecto 03",
+    type: "Landing Page",
+  },
+  {
+    img: "http://tecnoinver.local/wp-content/uploads/2026/10/placeholder.webp",
+    title: "Proyecto 04",
+    type: "Landing Page",
+  },
+  {
+    img: "http://tecnoinver.local/wp-content/uploads/2026/10/placeholder.webp",
+    title: "Proyecto 05",
+    type: "Landing Page",
+  },
+  {
+    img: "http://tecnoinver.local/wp-content/uploads/2026/10/placeholder.webp",
+    title: "Proyecto 06",
+    type: "Landing Page",
+  },
+];
+
+const projectsGrid = document.getElementById("web-projects-grid");
+
+projects.forEach((project) => {
+  const projectCard = document.createElement("article");
+
+  projectCard.classList.add("project-card");
+
+  projectCard.innerHTML = `
+  <img class="project-card-img" src="${project.img}">
+  <h3 class="websites-title">${project.title}</h3>
+  <p class="project-type">${project.type}</p>
+   <a href="${project.link}" class="website-btn">
+      Cotizar proyecto
+      </a>
+  
+  `;
+
+  projectsGrid.appendChild(projectCard);
+});

@@ -208,7 +208,9 @@ h2.website-design-titles {
 
 .websites-title {
   font-size: var(--font-h6);
-  margin-top: 1.25rem;
+  margin-block: 0;
+  margin-bottom: 0.6rem;
+  margin-top: 1rem;
   width: fit-content;
   background: var(--main-gradient);
   background-clip: text;
@@ -243,6 +245,31 @@ h2.website-design-titles {
 .website-btn:hover {
   transform: translateY(-5px);
   color: var(--white-600);
+}
+
+.website-projects {
+  width: 100%;
+  max-width: 1196px;
+}
+
+#web-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.project-card {
+  border: 1px solid var(--white-600);
+  padding: 1.5rem;
+}
+
+.project-card-img {
+  width: 100%;
+}
+
+.project-type {
+  margin-bottom: 2rem;
+  color: var(--obsidian-200);
 }
 
 @media (min-width: 300px) {

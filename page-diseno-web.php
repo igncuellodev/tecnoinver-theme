@@ -80,6 +80,16 @@ $js_file  = get_stylesheet_directory() . '/assets/js/diseno-web.js';
     </div>
     </section>
 
+
+
+
+    <section class="website-projects">
+        <div id="web-projects-grid">
+
+        </div>
+
+    </section>
+
 </main>
 
 
