@@ -73,3 +73,55 @@ websites.forEach((website) => {
 
   container.appendChild(card);
 });
+
+const services = [
+  {
+    icon: "http://tecnoinver.local/wp-content/uploads/2026/10/Pluma.svg",
+    title: "Diseño web personalizado",
+  },
+
+  {
+    icon: "http://tecnoinver.local/wp-content/uploads/2026/10/Pluma.svg",
+    title: "páginas con wordpress",
+  },
+
+  {
+    icon: "http://tecnoinver.local/wp-content/uploads/2026/10/Pluma.svg",
+    title: "Sitio web administrable",
+  },
+  {
+    icon: "http://tecnoinver.local/wp-content/uploads/2026/10/Pluma.svg",
+    title: "Enlace a RR.SS y Whatsapp",
+  },
+  {
+    icon: "http://tecnoinver.local/wp-content/uploads/2026/10/Pluma.svg",
+    title: "estructura enfocada en usabilidad",
+  },
+  {
+    icon: "http://tecnoinver.local/wp-content/uploads/2026/10/Pluma.svg",
+    title: "Sitio web seguro con SSL",
+  },
+  {
+    icon: "http://tecnoinver.local/wp-content/uploads/2026/10/Pluma.svg",
+    title: "Diseño y desarrollo responsive",
+  },
+  {
+    icon: "http://tecnoinver.local/wp-content/uploads/2026/10/Pluma.svg",
+    title: "Optimizados para venta y SEO",
+  },
+];
+
+const servicesGrid = document.getElementById("services-web-grid");
+
+services.forEach((service) => {
+  const serviceCard = document.createElement("article");
+  serviceCard.classList.add("service-card");
+
+  serviceCard.innerHTML = `
+  <img class="icon" width="50" src="${service.icon}">
+  <h3 class="websites-title">${service.title}</h3>
+
+  `;
+
+  servicesGrid.appendChild(serviceCard);
+});
