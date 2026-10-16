@@ -80,10 +80,45 @@ $js_file  = get_stylesheet_directory() . '/assets/js/diseno-web.js';
     </div>
     </section>
 
+    <section class="tech-stack">
+        <h2 class="website-design-titles"><span class="main-highlight">Usamos la tecnología que</span> más te acomode para tu desarrollo</h2>
+
+        <div class="stack-logos">
+            <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/svg/wp-iso.svg")) ?>" width="70" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/svg/woo-logo.svg")) ?>" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/svg/html-logo.svg")) ?>" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/svg/css-logo.svg")) ?>" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/svg/js-logo.svg")) ?>" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/svg/php-logo.svg")) ?>" alt="">
+
+        </div>
+
+    </section>
+
+
+    <section class="responsive-banner">
+        <div class="responsive-wrapper">
+            <div class="banner-text-container">
+                <h2 class="white-title">Elige la web que <span class="main-highlight">impulse tu negocio</span>, con diseño responsivo y a medida</h2>
+                <p class="white-text">Para empresas que buscan una presencia sólida y profesional en internet. Transmite tu identidad de marca, misión, servicios y canales de contacto.</p>
+                
+            </div>
+
+            <div class="banner-image-container">
+                    <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/webp/devices.webp")) ?>" alt="">
+                </div>
+       
+
+        </div>
+    
+
+    </section>
+
 
 
 
     <section class="website-projects">
+         <h2 class="website-design-titles"><span class="main-highlight">Nuestros</span> proyectos</h2>
         <div id="web-projects-grid">
 
         </div>

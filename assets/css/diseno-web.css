@@ -250,10 +250,16 @@ h2.website-design-titles {
 .website-projects {
   width: 100%;
   max-width: 1196px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
 }
 
 #web-projects-grid {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
 }
@@ -271,6 +277,79 @@ h2.website-design-titles {
   margin-bottom: 2rem;
   color: var(--obsidian-200);
 }
+
+.tech-stack{
+  margin-top: 128px;
+  margin-bottom: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+  max-width: 1196px;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-logos{
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+
+
+.responsive-banner{
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 1) 100%), url("../images/webp/web-design-hero.webp") lightgray 50% / cover no-repeat;
+  margin-bottom: 128px;
+}
+
+.responsive-wrapper{
+  width: 100%;
+  max-width: 1196px;
+  height: 100%;
+  display: flex;
+  gap: 48px;
+}
+
+.banner-text-container{
+  width: 100%;
+  height: 100%;
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 32px;
+}
+
+.banner-image-container{
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.white-title{
+  color:var(--white-500);
+  text-align: left;
+  font-size: var(--font-h3);
+  font-weight: 700;
+}
+
+.white-text{
+  color: var(--white-500);
+  font-size: var(--text-lg);
+  max-width: 500px;
+}
+
+
 
 @media (min-width: 300px) {
   #cards-container {
@@ -307,7 +386,7 @@ h2.website-design-titles {
     gap: 32px;
   }
   h2.website-design-titles {
-    text-align: left;
+    text-align: center;
   }
 
   #services-web-grid {
@@ -321,6 +400,30 @@ h2.website-design-titles {
 
   .servicios-web {
     padding: 1rem;
+  }
+
+  .website-projects{
+    padding: 1rem;
+    gap: 32px;
+  }
+
+  #web-projects-grid{
+    grid-template-columns: 1fr;
+  }
+
+
+
+  .responsive-banner{
+    height: fit-content;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+
+
+  .responsive-wrapper{
+    flex-direction: column;
   }
 }
 
@@ -348,6 +451,10 @@ h2.website-design-titles {
   .service-card {
     padding: 1rem;
   }
+
+  #web-projects-grid{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 1157px) {
@@ -369,6 +476,14 @@ h2.website-design-titles {
   .logo-slider-section {
     --logo-gap: 1.5rem;
   }
+
+  #web-projects-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .responsive-wrapper{
+    flex-direction: row;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -386,4 +501,5 @@ h2.website-design-titles {
   .logo-slider-list[aria-hidden="true"] {
     display: none;
   }
+
 }
