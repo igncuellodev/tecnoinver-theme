@@ -118,7 +118,7 @@ $js_file  = get_stylesheet_directory() . '/assets/js/diseno-web.js';
 
 
     <section class="website-projects">
-         <h2 class="website-design-titles"><span class="main-highlight">Nuestros</span> proyectos</h2>
+         <h2 class="website-design-titles centered"><span class="main-highlight">Nuestros</span> proyectos</h2>
         <div id="web-projects-grid">
 
         </div>
@@ -126,6 +126,10 @@ $js_file  = get_stylesheet_directory() . '/assets/js/diseno-web.js';
     </section>
 
 </main>
+
+<?php
+the_content();
+?>
 
 
 
